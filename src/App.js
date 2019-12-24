@@ -40,7 +40,7 @@ class App extends React.Component {
       }
       this.setState({
         items: JSON.parse(localStorage.getItem('todo')),
-        showInput: false,
+        showInput: true,
         value: ""
       })
     }
@@ -53,6 +53,8 @@ class App extends React.Component {
     list.splice(index, 1)
     this.setState({
       items: list,
+      showInput: false,
+
     })
     localStorage.setItem('todo', JSON.stringify(list));
   }
@@ -93,7 +95,7 @@ class App extends React.Component {
             ))
           )}
           {this.state.showInput && (
-            <input type="text" value={this.state.value} onKeyDown={this.handleKeyPress} onChange={this.handleChange} className="input_box" />
+            <input type="text" value={this.state.value} onKeyDown={this.handleKeyPress} onChange={this.handleChange} className="input_box" autoFocus />
           )}
         </div>
       </div>
