@@ -96,7 +96,9 @@ class App extends React.Component {
             ))
           )}
           {this.state.showInput && (
-            <input type="text" value={this.state.value} onKeyDown={this.handleKeyPress} onChange={this.handleChange} className="input_box" autoFocus />
+            <div className="inputbox_style">
+              <input type="text" value={this.state.value} onKeyDown={this.handleKeyPress} onChange={this.handleChange} className="input_box" autoFocus />
+            </div>
           )}
         </div>
       </div>

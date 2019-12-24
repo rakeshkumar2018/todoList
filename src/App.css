@@ -104,6 +104,10 @@ flex-direction: column;
   font-weight: bold;
 
 }
+.inputbox_style{
+  width: 92%;
+  margin-left: 56px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
