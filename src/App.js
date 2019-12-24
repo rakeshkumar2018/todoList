@@ -72,7 +72,7 @@ class App extends React.Component {
           {/* Header */}
           <div className="header">
             <div className="header_left">
-              <div style={{ color: "#FFF" }}> TODO LIST</div>
+              <div className="header_text"> TODO </div>
             </div>
             <div className="header_right">
               <div onClick={this.handleButtonClick} >
@@ -80,6 +80,7 @@ class App extends React.Component {
               </div>
             </div>
           </div>
+          <hr className="row" />
           {this.state.items && this.state.items.length > 0 && (
             this.state.items.map((obj, key) => (
               <div>

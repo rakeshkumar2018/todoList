@@ -28,18 +28,19 @@
   height: 1000px;
   justify-content: center;
   display: flex;
+  background-color: #051026;
 }
 .content{
-background: #151E36;
+background: #051026;
 padding-bottom: 1000px;
-width: 50%;
+width: 90%;
 display: flex;
 flex-direction: column;
 
 }
 .header{
   height: 40px;
-   width: 100%;
+   width: 94%;
     background: #051026; 
     margin-top: 20px;
     justify-content:space-between;
@@ -48,20 +49,23 @@ flex-direction: column;
 .header_left{
   height: 40px;
   display: flex;
-  margin-left: 8px;
+  margin-left: 52px;
   align-items: center;
 }
 .header_right{
   height: 40px;
   display: flex;
   align-items: center;
-  margin-right: 8px;
+  margin-right: -18px;
 
 }
 .header_logo{
   width:24px ;
   height: 24px;
   background:#707070 ;
+  border-radius: 4px;
+  padding-right: 8px;
+  padding-left: 8px;
   
 }
 .todo_list{
@@ -93,6 +97,12 @@ flex-direction: column;
   border-radius: 12px;
   border: 2px solid  #707070 ;
   margin-left: 16px;
+}
+.header_text{
+  font-size: 22;
+  color: yellow;
+  font-weight: bold;
+
 }
 @keyframes App-logo-spin {
   from {
